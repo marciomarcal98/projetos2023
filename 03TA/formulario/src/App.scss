@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(./assets/bg-intro-mobile.png) #FF7979;
+    color: #fff;
+}
+
+header {
+    margin: 5.5rem 1.5rem 4rem 1.5rem;
+    text-align: center;
+
+    h1 {
+        font-size: 22px;
+        line-height: 2.25rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.625rem;
+    }
+}
+
+main {
+    margin-inline: 1.5rem;
+    text-align: center;
+
+    & > p {
+        padding-block: 1.125rem;
+        background: #5E54A4;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    }
+
+    form {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 4.25rem;
+        box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+
+        input, button {
+            display: block;
+            width: 100%;
+            padding: 1rem 1.25rem;
+            border-radius: 5px;
+            border: 1px solid #DEDEDE;
+        }
+
+        input {
+            margin-bottom: 1rem;
+            color: #3D3B48;
+
+            &::placeholder {
+                font-weight: 600;
+                font-size: 0.875rem;
+            }
+
+            &:focus {
+                outline: 1px solid #5E54A4;
+            }
+        }
+
+        button {
+            background: #38CC8B;
+            border: none;
+            box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+            color: #FFF;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}

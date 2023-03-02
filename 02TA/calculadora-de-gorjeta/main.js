@@ -10,3 +10,7 @@ function receberPessoas() {
     pessoas = Number(document.querySelector("#pessoas").value)
     console.log(pessoas)
 }
+
+function receberPorcentagemGorjeta() {
+    
+}

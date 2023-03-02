@@ -1,5 +1,5 @@
 let conta = 0
-let pessoas = 0
+let quantidadePessoas = 0
 
 function receberConta() {
     conta = Number(document.querySelector("#conta").value)
@@ -7,6 +7,10 @@ function receberConta() {
 }
 
 function receberPessoas() {
-    pessoas = Number(document.querySelector("#pessoas").value)
-    console.log(pessoas)
+    quantidadePessoas = Number(document.querySelector("#pessoas").value)
+    console.log(quantidadePessoas)
+}
+
+function receberPorcentagemGorjeta(porcentagem) {
+    console.log(porcentagem)
 }
