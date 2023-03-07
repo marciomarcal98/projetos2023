@@ -11,10 +11,12 @@ function receberPessoas() {
 }
 
 function receberPorcentagem(porcentagem) {
-    if (porcentagem === 0) {
+    if (porcentagem === "custom") {
         porcentagemGorjeta = Number(document.querySelector("#gorjeta").value)
     } else {
         porcentagemGorjeta = porcentagem
+        const button = document.querySelector("input[value='5%']")
+        button.classList.add('button-selected')
     }
 
     console.log(porcentagemGorjeta)

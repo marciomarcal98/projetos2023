@@ -1,12 +1,23 @@
 let conta = 0
-let gorjeta = 0
+let pessoas = 0
+let porcentagemGorjeta = 0
 
 function receberConta() {
-    const contaRecebida = document.querySelector("#conta").value
-    conta = Number(contaRecebida)
+    conta = Number(document.querySelector("#conta").value)
+    console.log(conta)
 }
 
-function receberGorjeta(porcentagem) {
-    gorjeta = porcentagem
-    document.querySelector(`input[value="${porcentagem}%"]`).classList.add("button-selected")
+function receberPessoas() {
+    pessoas = Number(document.querySelector("#conta").value)
+    console.log(pessoas)
+}
+                                
+function receberPorcentagemGorjeta(valor) {
+    if (valor === 'custom') {
+        porcentagemGorjeta = Number(document.querySelector("#gorjeta").value)
+    } else {
+        porcentagemGorjeta = valor
+    }
+
+    console.log(porcentagemGorjeta)
 }

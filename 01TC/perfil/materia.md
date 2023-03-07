@@ -57,3 +57,14 @@ type="i" => romanos minúsculos
 
 ### Elemento da lista
 Todos os elementos da lista são colocados em <li></li>
+
+
+
+# 03/03
+
+## CSS => Cascading Style Sheet
+
+1º - é necessário criar um arquivo *style.css*
+2º - conectar o arquivo CSS com o HTML
+
+** Dar exemplo de CSS
