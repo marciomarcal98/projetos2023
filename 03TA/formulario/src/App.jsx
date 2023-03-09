@@ -1,6 +1,16 @@
+import { useState } from 'react'
+
 import './App.scss'
 
 function App() {
+    const [firstName, setFirstName] = useState("")
+
+    function mudancaFirstName(event) {
+        setFirstName(event.target.value)
+    }
+
+    console.log(firstName)
+
     return (
         <>
             <header>
@@ -11,8 +21,8 @@ function App() {
                 <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
 
                 <form action="">
-                    <input type="text" placeholder="First Name" />
-                    <input type="text" placeholder="Last Name" />
+                    <input type="text" placeholder="First Name" onChange={(event) => mudancaFirstName(event)} />
+                    <input type="text" placeholder="Last Name"  />
                     <input type="text" placeholder="Email Adress" />
                     <input type="text" placeholder="Password" />
 

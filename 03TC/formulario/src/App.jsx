@@ -9,7 +9,9 @@ export function App() {
             </header>
             
             <main>
-                <p>Try it free 7 days then $20/mo. thereafter</p>
+                <p>
+                    <strong>Try it free 7 days</strong> then $20/mo. thereafter
+                </p>
 
                 <form action="">
                     <input type="text" placeholder="First Name" />
